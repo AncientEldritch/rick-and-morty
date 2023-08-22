@@ -8,12 +8,15 @@ import Footer from './components/Footer/Footer'
 import About from './pages/About/About'
 import Episodes from './pages/Episodes/Episodes'
 import CharacterDetails from './pages/CharacterDetails/CharacterDetails'
+import ThemeContextProvider from './contexts/ThemeContext'
+
 
 function App() {
 
 
   return (
     <BrowserRouter>
+     <ThemeContextProvider>
       <Header  />
 
       <Routes>
@@ -26,6 +29,7 @@ function App() {
       
 
       <Footer />
+      </ThemeContextProvider>
     </BrowserRouter>
   )
 }
