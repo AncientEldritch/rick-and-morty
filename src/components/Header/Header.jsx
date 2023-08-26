@@ -23,14 +23,17 @@ function Header() {
             <Link to='/about' style={{marginRight: "10px"}}>About</Link>
             <Link to='/episodes'>Episodes</Link>
         </div>
-        <button onClick={()=>setDarkMode(!darkMode)}
-        className={darkMode?"theme-button  theme-button-dark":"theme-button"}>
-          {
-            darkMode?"Light Mode" :  "Dark Mode"
+        <div>
+          <Link to='/favorites'>My Favorites</Link>
+         <button onClick={()=>setDarkMode(!darkMode)}
+          className={darkMode?"theme-button  theme-button-dark":"theme-button"}>
+           {
+             darkMode?"Light Mode" :  "Dark Mode"
 
-          }
+           }
           
-          </button>
+         </button>
+         </div>
     </div>
   )
 }

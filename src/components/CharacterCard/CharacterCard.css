@@ -22,6 +22,7 @@
     border-top-right-radius: 8px;
 }
 
+
 .character-card a{
     margin-top:10px;
     border:none;
@@ -31,3 +32,13 @@
     color:white;
     cursor:pointer;
 }
+
+.heart-icon{
+    color:var(--primary-bg);
+    font-size:20px;
+    cursor:pointer;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+  }
